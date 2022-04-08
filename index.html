@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            margin: auto;
+            margin-top: 10px;
+        }
+        form>input{
+            margin-top: 20px;
+        }
+        form>select{
+            margin-top: 20px;
+        }
+
+        form>#add{
+            width: 30%;
+            margin: auto;
+            margin-top: 30px;
+        }
+
+        form>#add:hover{
+            background-color: blue;
+            color: white;
+        }
+
+        h1{
+            width: 30%;
+            text-decoration: underline;
+            
+            margin: auto;
+            margin-top: 150px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="products.html">product page</a>
+    <h1>Enter details of your product</h1>
+
+    <form action="" id="form" onsubmit="storeData(event)">
+        <input type="text" placeholder="Product name " id="name">
+        <input type="text" name="" placeholder="Category " id="category">
+        <input type="url" name="" placeholder="Image Url  " id="image">
+        <input type="number" name="" placeholder="Price " id="Price">
+        <select name="" id="gender">
+            <option value="--">--</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <!-- <input type="" id="sold"> -->
+        <input type="submit" id="add">
+    </form>
+</body>
+</html>
+<script src="index.js"></script>
